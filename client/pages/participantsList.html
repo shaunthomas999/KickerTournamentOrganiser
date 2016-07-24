@@ -1,0 +1,30 @@
+<template name="participantsList">
+    <div>
+        <div class="clearfix">
+            <button id="addParticipant" type="button" class="btn btn-primary pull-right">Add participant</button>
+        </div>
+        <div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Nickname</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each getParticipants}}
+                    <tr>
+                        <th>{{nickname}}</th>
+                        <td>{{name}}</td>
+                        <td>{{emailAddress}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+        <div class="clearfix">
+            <button id="makeFixture" type="button" class="btn btn-primary pull-right">Make fixture</button>
+        </div>
+    </div>
+</template>
