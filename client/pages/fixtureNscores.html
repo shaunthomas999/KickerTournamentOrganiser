@@ -1,3 +1,7 @@
-<template name="fixture">
-    <div></div>
+<template name="fixtureNScores">
+    <div>
+        {{#each getFixtureNScoresList}}
+            {{> fixtureNScoresItem}}
+        {{/each}}
+    </div>
 </template>
