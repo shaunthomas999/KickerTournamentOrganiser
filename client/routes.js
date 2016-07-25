@@ -14,3 +14,10 @@ FlowRouter.route('/addParticipant', {
     BlazeLayout.render('mainLayout', { main: 'addParticipant' });
   },
 });
+
+FlowRouter.route('/fixtureAndScores', {
+  name: 'FixtureNScores',
+  action() {
+    BlazeLayout.render('mainLayout', { main: 'fixtureNScores' });
+  },
+});

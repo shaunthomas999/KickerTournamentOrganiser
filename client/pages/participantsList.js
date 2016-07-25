@@ -31,5 +31,8 @@ Template.participantsList.helpers({
 Template.participantsList.events({
   'click #addParticipant'(event, instance) {
     FlowRouter.go('AddParticipant');
+  },
+  'click #makeFixture'(event, instance) {
+    FlowRouter.go('FixtureNScores');
   }
 });
