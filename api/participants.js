@@ -13,3 +13,20 @@ if (Meteor.isServer) {
     return ParticipantsCollection.find({}, {sort: {"score":-1}});
   });
 }
+
+Meteor.methods({
+  /*
+   * Add new participant to monogdb collection
+   *
+   * */
+  'addParticipant'(name, nickname, emailAddress) {
+    console.log("Going to add new participant to database");
+    let participant = {
+      "name" : name,
+      "nickname" : nickname,
+      "emailAddress" : emailAddress,
+      "score": 0
+    };
+    ParticipantsCollection.insert(participant);
+  }
+});
