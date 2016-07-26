@@ -18,6 +18,14 @@ FlowRouter.route('/addParticipant', {
 FlowRouter.route('/fixtureAndScores', {
   name: 'FixtureNScores',
   action() {
+    //Meteor.call('makeFixturesAndScores');
     BlazeLayout.render('mainLayout', { main: 'fixtureNScores' });
+  },
+});
+
+FlowRouter.route('/semisAndFinals', {
+  name: 'SemisAndFinals',
+  action() {
+    BlazeLayout.render('mainLayout', { main: 'semisAndFinals' });
   },
 });
