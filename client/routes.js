@@ -28,10 +28,3 @@ FlowRouter.route('/fixtureAndScores', {
     BlazeLayout.render('mainLayout', { main: 'fixtureNScores' });
   }
 });
-
-FlowRouter.route('/semisAndFinals', {
-  name: 'SemisAndFinals',
-  action() {
-    BlazeLayout.render('mainLayout', { main: 'semisAndFinals' });
-  }
-});
