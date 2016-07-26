@@ -37,5 +37,20 @@ Template.fixtureNScores.events({
   },
   'click .goToParticipantsListPageLink'(event, instance) {
     FlowRouter.go('ParticipantsList');
-}
+  },
+  'click #makeNewFixture'(event, instance) {
+    console.log("Going to call makeFixturesAndScores Meteor method");
+    Meteor.call('makeFixturesAndScores');
+  },
+  'click .btn-score'(event, instance) {
+    let teamId;
+    if(event.currentTarget.className.search('btn-team0') != -1) {
+      teamId = 0;
+    }
+    else {
+      teamId = 1;
+    }
+    let score = event.currentTarget.innerText;
+    Meteor.call('updateScore', this._id, teamId, score);
+  }
 });
