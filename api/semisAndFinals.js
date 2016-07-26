@@ -17,14 +17,3 @@ if (Meteor.isServer) {
     return SemiFinalsFixturesNScoresCollection.find({});
   });
 }
-
-Meteor.methods({
-  /*
-   * Algorithm to create fixtures
-   *
-   * */
-  'makeSemisFixtures'() {
-    //articles.find({}, {sort: {published:-1}, limit: 1})
-    ParticipantsCollection.find({}, {sort: {"score":-1}, limit:8});
-  }
-});
