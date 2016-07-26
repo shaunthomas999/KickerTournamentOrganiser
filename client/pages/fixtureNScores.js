@@ -34,5 +34,8 @@ Template.fixtureNScores.helpers({
 Template.fixtureNScores.events({
   'click #startSemisAndFinals'(event, instance) {
     FlowRouter.go('SemisAndFinals');
-  }
+  },
+  'click .goToParticipantsListPageLink'(event, instance) {
+    FlowRouter.go('ParticipantsList');
+}
 });

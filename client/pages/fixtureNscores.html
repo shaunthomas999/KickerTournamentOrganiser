@@ -1,10 +1,23 @@
 <template name="fixtureNScores">
+    <div class="clearfix">
+        <button type="button" class="goToParticipantsListPageLink btn btn-link">
+            &lt; Go to participants list page
+        </button>
+        <button id="makeNewFixture" type="button" class="btn btn-primary pull-right">
+            Make new fixture
+        </button>
+    </div>
     <div>
         {{#each getFixtureNScoresList}}
             {{> fixtureNScoresItem}}
         {{/each}}
     </div>
     <div class="clearfix">
-        <button id="startSemisAndFinals" type="button" class="btn btn-primary pull-right">Start semis and finals</button>
+        <button id="startSemisAndFinals" type="button" class="btn btn-primary pull-right">
+            Start semis and finals
+        </button>
+        <button id="playMore" type="button" class="btn btn-primary pull-right">
+            Play more
+        </button>
     </div>
 </template>
