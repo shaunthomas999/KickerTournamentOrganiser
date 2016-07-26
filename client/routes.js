@@ -25,7 +25,6 @@ FlowRouter.route('/addParticipant', {
 FlowRouter.route('/fixtureAndScores', {
   name: 'FixtureNScores',
   action() {
-    //Meteor.call('makeFixturesAndScores');
     BlazeLayout.render('mainLayout', { main: 'fixtureNScores' });
   }
 });
