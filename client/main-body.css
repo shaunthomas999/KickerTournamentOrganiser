@@ -5,6 +5,9 @@ button {
 .clearfix {
     margin: 5px 0;
 }
+.heading {
+    text-align: center;
+}
 
 #container {
     width: 50%;
