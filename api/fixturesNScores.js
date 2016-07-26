@@ -73,7 +73,7 @@ Meteor.methods({
     }
   },
   /*
-   * Algorithm to create fixtures
+   * Update score in FixturesAndScoresCollection as well as ParticipantsCollection
    *
    * */
   'updateScore'(elementId, teamId, score) {
