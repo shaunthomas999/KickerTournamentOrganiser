@@ -32,7 +32,7 @@ Template.participantsList.events({
   'click #addParticipant'(event, instance) {
     FlowRouter.go('AddParticipant');
   },
-  'click #makeFixture'(event, instance) {
+  'click .goToFixturesNScoresPageLink'(event, instance) {
     FlowRouter.go('FixtureNScores');
   }
 });
