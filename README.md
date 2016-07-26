@@ -10,10 +10,11 @@ KickerTournamentOrganiser is a small application that can be used to organise Ki
 
 ## Setup
 
-* Install Meteor
-* Install MongoDB
+* [Install Meteor](https://www.meteor.com/install)
+* [Install MongoDB](https://docs.mongodb.com/manual/installation/)
 
 ## Running application
 
-* Go to the project folder and execute command `meteor` in the terminal.
-* The application will run by default in http://localhost:3000/
+* Go to the project folder and execute command `meteor npm install` in the terminal.
+* Then run the application using command `meteor 
+* By default, application will be accessible at http://localhost:3000/
