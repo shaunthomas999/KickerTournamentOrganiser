@@ -10,6 +10,6 @@ if (Meteor.isServer) {
   * */
   Meteor.publish('participantsData', function findParticipants() {
     console.log("Finding participants");
-    return ParticipantsCollection.find({});
+    return ParticipantsCollection.find({}, {sort: {"score":-1}});
   });
 }
