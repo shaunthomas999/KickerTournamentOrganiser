@@ -30,3 +30,9 @@ Template.fixtureNScores.helpers({
     return FixturesAndScoresCollection.find({});
   }
 });
+
+Template.fixtureNScores.events({
+  'click #startSemisAndFinals'(event, instance) {
+    FlowRouter.go('SemisAndFinals');
+  }
+});
